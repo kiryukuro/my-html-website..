@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head  lang="en">
+		<meta charset="utf-8">
+		<title>Index</title>
+		<script src="js/login.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
+		<style>
+			body{
+			    font-family: tahoma;
+				background-color: #34495e;
+			}
+  			    
+			.shadow-effect{
+			    background: white;
+			    padding: 20px;
+			    border-radius: 4px;
+			    text-align: center;
+			    border: 1px solid #ececec;
+			    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.2);
+			}
+			  			    
+			#customers-testimonials .shadow-effect p{
+			    font-family: inherit;
+			    font-size: 17px;
+			    line-height: 1.5;
+			    margin: 0 0 17px 0;
+			    font-weight: 300;
+			}
+   
+			.testimonial-name{
+			    margin: -17px auto 0;
+			    display: table;
+			    width: auto;
+			    background: #fc2a93;
+			    padding: 9px 25px;
+			    text-align: center;
+			    color: white;
+			    box-shadow: 0 9px 18px rgba(0,0,0,0.12), 0 5px 7px rgba(0,0,0,0.05);
+			}
+			    
+			#customers-testimonials .item{
+			    text-align: center;
+			    caption-side: 50px;
+			    margin-bottom: 80px;
+			    opacity: 0.2;
+			    transform: scale3d(0.8, 0.8, 1);
+			    transition: all 0.3s ease-in-out;
+			}
+				
+			#customers-testimonials .owl-item.active.center .item{
+			    opacity: 1;
+			    transform: scale3d(1.0, 1.0, 1);
+			}
+			
+			.owl-carousel .owl-item img{
+			    transform-style: preserve-3d;
+			    max-width: 90px;
+			    margin: 0 auto 17px;
+			}
+			
+			#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+			#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span{
+			    background: #fa2992;
+			    transform: translate3d(0px, -50%, 0px) scale(0.7);
+			}
+			
+			#customers-testimonials.owl-carousel .owl-dots{
+			   display: inline-block;
+			    width: 100%;
+			    text-align: center;
+			}
+			
+			#customers-testimonials.owl-carousel .owl-dots .owl-dot{
+			    display: inline-block;
+			}
+			
+			#customers-testimonials.owl-carousel .owl-dots .owl-dot span{
+			    background: hotpink;
+			    display: inline-block;
+			    height: 20px;
+			    margin: 0 2px 5px;
+			    transform: translate3d(0px, -50%, 0) scale(0.3);
+			    transform-origin: 50% 50% 0;
+			    transition: all 250ms ease-out 0s;
+			    width: 20px;
+			}
+		</style>
+	</head>
+	
+	<body onload="Chk()">
+		<section class="testimonials">
+		    <div class="container">
+		        <br><br><br><br><br><br><center><h1><font color="aquamarine"><b>Computer Vision by Dr Emma Alexander</b></font></h1></center><br><br><br>
+		        <div class="col-sm-12">
+		            <div id="customers-testimonials" class="owl-carousel">
+		               <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/BJEH.jpg" class="img-circle" alt="">
+		                        <p>
+		                            <font color="red"><b>Computer Vision works by using... </b></font>cameras, models and machine learning. The distinction between high level vision and low level vision is that the former covers advanced technology such as facial recognition, gesture recognition, video description and image retrieval, while the latter contains more simple concepts like color, shape, depth, motion, edges and corners.
+		                        </p>
+		                    </div>
+		                </div>
+		                
+		                 <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/BHW2.jpg" class="img-circle" alt="">
+		                        <p>
+		                            <font color="red"><b>Binocular stereo is... </b></font>Binocular stereo vision is a kind of the computer vision technology that can simulate human eyes to deal with the surroundings directly, which uses two cameras to shoot the same scenes at the same time, the three-dimensional (3D) images are collected.
+		                        </p>
+		                    </div>
+		                </div>
+
+		                <div class="item">
+		                    <div class="shadow-effect">
+		                        <img src="img/KLLDDXG.jpg" class="img-circle" alt="">
+		                        <p>
+		                            <font color="red"><b>A fun activity you can test out and play with! </b></font>https://tinyurl.com/stereoeoeo
+		                    </div>
+		                </div> 
+		            </div>
+		        </div>
+		    </div>
+		</section>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+		<script>
+		jQuery(document).ready(function($) {
+		    		"use strict";
+		    		//  TESTIMONIALS CAROUSEL HOOK
+			        $('#customers-testimonials').owlCarousel({
+			            loop: true,
+			            center: true,
+			            items: 3,
+			            margin: 0,
+			            autoplay: true,
+			            dots:true,
+			            autoplayTimeout: 8500,
+			            smartSpeed: 450,
+			            responsive: {
+			              0: {
+			                items: 1
+			              },
+			              768: {
+			                items: 2
+			              },
+			              1170: {
+			                items: 3
+			              }
+			            }
+			        });
+		    	});
+		</script>
+		
+	</body>
+</html>
+
